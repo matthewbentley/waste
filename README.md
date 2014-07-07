@@ -3,6 +3,14 @@ waste
 
 Waste bandwidth over SSH
 
+Requirements
+------------
+- ssh
+- nc
+- pv (optional)
+- [frandom kernel module](http://www.billauer.co.il/frandom.html) (optional)
+
+
 Info
 ----
 This script exists solely to waste download bandwidth (and thus NSA storage
