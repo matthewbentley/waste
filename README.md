@@ -9,7 +9,9 @@ This script exists solely to waste download bandwidth (and thus NSA storage
 space) over ssh. It starts listening with nc on port 2020, and simultaneously
 connects to a remote server and pipes random data over the ssh connection
 
-USAGE: waste.sh [-P] [-p port] [-f] <remote host>
+USAGE:
+
+        waste.sh [-P] [-p port] [-f] <remote host>
         -P       pipe the output through pv, to watch it real-time (doesn't seem to work yet)
         -f       use /dev/frandom on remote host
         -p port  a different port
@@ -22,6 +24,7 @@ USAGE: waste.sh [-P] [-p port] [-f] <remote host>
         to also throw in a few anti-government Tweets and plain-text emails.
 
 ISSUES:
+
         - -P does not work
         - Only does server -> client (download), but could also do
           client -> server (upload).
